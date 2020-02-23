@@ -1,23 +1,8 @@
-#include <string.h>
-#include <stdio.h>
-
 /*
  * itob(): transforms integer to integer string with number system 'b'
  */
 
 void itob(int number, char string[], int number_system);
-
-int main()
-{
-    char string[10000];
-    int n = 64;
-    itob(n, string, 2);
-
-    for (int i = 0; string[i] != '\0'; ++i)
-        putchar(string[i]);
-
-    return 0;
-}
 
 void itob(int n, char s[], int b)
 {
